@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the perfect property for your dreams. Our team of experts will help you find the perfect property in your area."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="public/favicon.png" />
+    <title>Real Estate Co.</title>
+  </head>
+  <body id="home">
+    <!-- Navigatoin -->
+    <nav class="navbar bg-primary bg-opacity-10 fixed-top">
+      <div class="container-sm">
+        <a class="navbar-brand" href="#home"
+          ><i
+            class="fa-solid text-primary bg-dark bg-opacity-75 p-2 rounded-circle fa-house"
+          ></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas bg-white bg-opacity-75 offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5
+              class="offcanvas-title text-uppercase"
+              id="offcanvasNavbarLabel"
+            >
+              Real Estate Co.
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutUs">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#listings">Listings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactUs">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Links</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--  -->
+
+    <!-- Hero section  -->
+    <section id="hero" class="container bg-primary bg-opacity-10 mt-7">
+      <div class="row align-items-center">
+        <!-- Home Header -->
+        <section
+          class="col-12 col-md-6 mb-4 hero-section d-flex flex-column p-4 justify-content-center mx-auto text-center text-md-start"
+        >
+          <h1 class="display-4 fw-bold text-primary">
+            Find Your Dream Property with Us
+          </h1>
+          <p>
+            Whether you’re looking to buy, sell, or rent, our team of experts is
+            here to help you make informed decisions and secure the best deals
+            in real estate.
+          </p>
+          <a href="#listings" class="btn btn-primary">Explore Listings</a>
+        </section>
+
+        <!-- Carousel -->
+        <section class="col-12 col-md-6">
+          <div
+            id="carouselCards"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselCards"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselCards"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselCards"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselCards"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1686090449192-4ab1d00cb735?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="Forest hut"
+                  style="object-fit: contain"
+                />
+                <div
+                  class="carousel-caption bg-primary bg-opacity-75 d-none d-md-block"
+                >
+                  <h5>Forest hut</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="Modern house"
+                  style="object-fit: contain"
+                />
+                <div
+                  class="carousel-caption d-none bg-primary bg-opacity-75 d-md-block"
+                >
+                  <h5>Modern house</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="Villa in nature"
+                  style="object-fit: contain"
+                />
+                <div
+                  class="carousel-caption bg-primary bg-opacity-75 d-none d-md-block"
+                >
+                  <h5>Villa in nature</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="Forest hut"
+                  style="object-fit: contain"
+                />
+                <div
+                  class="carousel-caption bg-primary bg-opacity-75 d-none d-md-block"
+                >
+                  <h5>Forest hut</h5>
+                  <p>
+                    Some representative placeholder content for the fourth
+                    slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselCards"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselCards"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Who are we -->
+    <section id="aboutUs" class="about-us-section mt-7 py-5 bg-light">
+      <div class="container">
+        <h2 class="display-5 fw-bold text-primary text-center">Who are we</h2>
+        <h3 class="mt-3 mb-4 text-center">Your Trusted Real Estate Partner</h3>
+        <div class="bg-primary bg-opacity-10 p-4">
+          <p class="lead text-muted">
+            We are a team of seasoned real estate professionals committed to
+            providing comprehensive guidance and support for all your property
+            needs. Whether you’re a first-time homebuyer searching for the
+            perfect family residence, an investor seeking lucrative
+            opportunities, or a business owner in need of the ideal commercial
+            space, we have the expertise to assist you. Our mission is to make
+            the buying, selling, and renting process as seamless and transparent
+            as possible, ensuring that you find the property that perfectly
+            suits your needs and aspirations. Trust our team to be with you at
+            every step, from initial consultations to final negotiations.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--why choose us  -->
+    <section id="services" class="features-section mt-7">
+      <div class="container">
+        <h2 class="text-primary fw-bold display-5 text-center">
+          Why choose us
+        </h2>
+        <div class="row g-4">
+          <!-- Card 1: Local Expertise -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                <h5 class="card-title fw-bold">Local Expertise</h5>
+                <p class="card-text">
+                  "We have extensive knowledge of the local market, enabling us
+                  to find the best properties and provide valuable insights."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Client-Centric Approach -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-user-friends fa-2x text-primary mb-3"></i>
+                <h5 class="card-title fw-bold">Client-Centric Approach</h5>
+                <p class="card-text">
+                  "We prioritize your needs and work to understand your vision,
+                  ensuring that the entire experience is tailored to you."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Comprehensive Listings -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-th-list fa-2x text-primary mb-3"></i>
+                <h5 class="card-title fw-bold">Comprehensive Listings</h5>
+                <p class="card-text">
+                  "Access a wide selection of properties and have the
+                  convenience of viewing detailed listings with high-quality
+                  images and virtual tours."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Trusted Advisors -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-handshake fa-2x text-primary mb-3"></i>
+                <h5 class="card-title fw-bold">Trusted Advisors</h5>
+                <p class="card-text">
+                  "Our agents are committed to transparency, integrity, and
+                  supporting you in making informed decisions."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Personalized Service -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-headset fa-2x text-primary mb-3"></i>
+                <h5 class="card-title fw-bold">Personalized Service</h5>
+                <p class="card-text">
+                  "We believe in a hands-on, personalized approach, offering
+                  dedicated support through every stage of the buying or selling
+                  process."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+                <h5 class="card-title fw-bold">Market Analysis</h5>
+                <p class="card-text">
+                  "We conduct thorough market analysis to provide you with
+                  insights and trends, helping you make informed decisions in
+                  your property journey."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- Property listings -->
+    <section class="mt-8" id="listings">
+      <div>
+        <h2 class="display-5 fw-bold text-primary text-center mb-3">
+          Select your property
+        </h2>
+      </div>
+      <div class="container my-5">
+        <div class="row">
+          <!-- Property 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1682377521625-c656fc1ff3e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Luxury House"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luxury Villa</h5>
+                <p class="card-text">
+                  A stunning 5-bedroom villa with ocean views, private pool, and
+                  modern amenities.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1684175656320-5c3f701c082c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="City Apartment"
+              />
+              <div class="card-body">
+                <h5 class="card-title">City Apartment</h5>
+                <p class="card-text">
+                  A cozy 2-bedroom apartment in the heart of the city with a
+                  panoramic skyline view.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1579627559241-aa855a66df15?q=80&w=2031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Countryside Cottage"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Countryside Cottage</h5>
+                <p class="card-text">
+                  A charming cottage in a peaceful countryside setting, perfect
+                  for weekend getaways.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1588557132645-ff567110cafd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Mansion"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Modern Mansion</h5>
+                <p class="card-text">
+                  An exquisite mansion featuring 8 bedrooms, a private pool, and
+                  expansive gardens.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 5 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1517542117529-b6b058a13f51?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Beach House"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beach House</h5>
+                <p class="card-text">
+                  A picturesque beach house with stunning oceanfront views,
+                  ideal for summer vacations.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 6 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVudGhvdXNlfGVufDB8fDB8fHww"
+                class="card-img-top"
+                alt="Penthouse"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luxury Penthouse</h5>
+                <p class="card-text">
+                  A stunning penthouse with a rooftop terrace, breathtaking city
+                  views, and modern interiors.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- features -->
+    <section class="container mt-7">
+      <h2 class="text-center mb-4 fw-bold display-5 text-primary">
+        Property Features
+      </h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Feature 1 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="fas fa-home fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Modern Interiors</h5>
+              <p class="card-text">
+                Stylish and open floor plans with top finishes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Prime Location</h5>
+              <p class="card-text">Close to key amenities and transport.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="fas fa-tree fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Outdoor Spaces</h5>
+              <p class="card-text">Beautiful gardens, patios, and terraces.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Advanced Security</h5>
+              <p class="card-text">24/7 surveillance and gated access.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="fas fa-leaf fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Eco-Friendly</h5>
+              <p class="card-text">Green energy and water-saving features.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <i class="fas fa-star fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Luxury Amenities</h5>
+              <p class="card-text">Exclusive pools, gyms, and events.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- Contact form -->
+    <section id="contactUs" class="bg-primary mt-7 p-4 bg-opacity-50">
+      <div class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form
+          class="form-contact"
+          id="contactForm"
+          action="/submit"
+          method="post"
+        >
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="button-form_Submit btn btn-primary">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- footer -->
+    <footer id="footer" class="mt-8 bg-dark text-light pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">
+              Real Estate Co.
+            </h5>
+            <p>
+              Your dream home is just a few clicks away. Explore our properties
+              and find the perfect place to call home.
+            </p>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#" class="text-light">About Us</a></li>
+              <li><a href="#" class="text-light">Properties</a></li>
+              <li><a href="#" class="text-light">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Buying</a></li>
+              <li><a href="#" class="text-light">Selling</a></li>
+              <li><a href="#" class="text-light">Renting</a></li>
+              <li><a href="#" class="text-light">Property Management</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> 123 Main Street, City, Country
+            </p>
+            <p><i class="fas fa-envelope mr-3"></i> info@realestate.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +1 234 567 890</p>
+            <p><i class="fas fa-print mr-3"></i> +1 234 567 891</p>
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="row mt-3">
+          <div class="col-md-12 col-lg-12">
+            <div class="text-center">
+              <a href="#" class="text-light me-4"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="text-light me-4"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+              <a href="#" class="text-light me-4"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-light me-4"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Real Estate Co. | Designed with Bootstrap | By Sharath Devadiga
+      </div>
+    </footer>
+
+    <!-- Bootstrap & FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+
+    <!--  -->
+
+    <!--  -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
